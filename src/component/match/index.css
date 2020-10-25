@@ -1,0 +1,27 @@
+.vms-card{
+    border-radius: 5px;
+}
+.vms-text-small{
+    font-size: small;
+}
+.vms-row{
+    display: flex;
+    flex-flow: column;
+}
+.vms-col{
+    display: flex;
+    flex-flow: row;
+}
+.vms-team{
+    flex: 0.4;
+}
+.vms-score{
+    flex: 0.6;
+}
+.vms-link{
+    display: flex;
+    justify-content: flex-end;
+}
+.vms-link > p{
+    font-size: small;
+}

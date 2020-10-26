@@ -5,7 +5,7 @@ import Body from './Body'
 import './index.css'
 
 function Main() {
-    const [menus,setMenus] = useState("contest")
+    const [menus,setMenus] = useState("match")
     const menuClick = (menu)=>{
         setMenus(menu)
     }

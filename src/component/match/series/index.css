@@ -1,0 +1,44 @@
+.sms-menu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(58, 204, 102);
+    align-items: center;
+}
+
+.sms-menu > div > p{
+    color: rgb(236, 236, 236);
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.sms-menu > div:hover{
+    border-bottom: 5px solid white;
+}
+
+.sms-menu > div > p:hover{
+    color: white;
+}
+
+.pte-thead{
+    background-color: rgb(204, 247, 204);
+}
+
+.pte-table{
+    font-size:10px
+}
+
+.ss-player{
+    display: flex;
+    flex-direction: row;       
+}
+.ss-player-name{
+    flex: 0.5;
+    justify-content: flex-start;
+}
+.ss-player-role{
+    flex: 0.5;
+    justify-content: flex-endz;
+}

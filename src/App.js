@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from './component'
+import Main from './router'
 import store from './redux/Store'
 import {Provider} from 'react-redux'
 

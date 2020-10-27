@@ -1,14 +1,14 @@
 import React from 'react'
 
-function Matches({ matches }) {
+function Matches({ matches, ClickMatch }) {
 
     return (
         <>
             {
                 matches.map((match, index) => {
                     return (
-                        <div className="card mt-3 mb-3 vms-card" key={index}>
-                            <div className="w3-container">
+                        <div className="card mt-3 mb-3 vms-card" key={index} >
+                            <div className="w3-container" onClick={()=>ClickMatch(match.nthmatch)}>
                                 <p className="w3-text-gray pt-1 w3-small">{match.nthmatch} . {match.place} . {match.time} . {match.date}</p>
 
                                 <div className="vms-row ">

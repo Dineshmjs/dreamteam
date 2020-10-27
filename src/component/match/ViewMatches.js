@@ -1,15 +1,15 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
 
-function ViewMatches({ matches, ClickPointtable, ClickSchedule }) {
+function ViewMatches({ matches, ClickPointtable, ClickSchedule, ClickMatch }) {
 
     return (
-        <>
+        <div className="w3-container">
             {
                 matches.map((match, index) => {
                     return (
-                        <div className="card mt-3 mb-3 vms-card" key={index}>
-                            <div className="w3-container">
+                        <div className="card mt-3 mb-3 vms-card" key={index} >
+                            <div className="w3-container" onClick={()=>ClickMatch(match.nthmatch)}>
                                 <p className="w3-text-gray pt-1 w3-small">{match.nthmatch} . {match.place} . {match.time} . {match.date}</p>
 
                                 <div className="vms-row ">
@@ -57,7 +57,7 @@ function ViewMatches({ matches, ClickPointtable, ClickSchedule }) {
                     )
                 })
             }
-        </>
+        </div>
     )
 }
 

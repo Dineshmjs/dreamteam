@@ -2,11 +2,14 @@ import React,{useState} from 'react'
 import './index.css'
 import ViewMatches from './ViewMatches'
 import Series from './series'
+import Live from './live'
 
 function Match() {
 
     const [viewMatches, setviewMatches] = useState(true)
+    const [live, setLive] = useState(false)
     const [series, setSeries] = useState(false)
+    const [nthmatch, setnthMatch] = useState(false)
     const [seriesMenu, setseriesMenu] = useState("matches")    
 
     const matches = [{
@@ -74,14 +77,25 @@ function Match() {
         setseriesMenu("matches")          
     }
 
+    const ClickMatch = (data)=>{
+        console.log(data)
+        setnthMatch(data)
+        setLive(true)
+        setSeries(false)
+        setviewMatches(false)
+    }
+
     return (
-        <div className="w3-container">
+        <div>
             {
-                viewMatches && <ViewMatches matches={matches} ClickPointtable={ClickPointtable} ClickSchedule={ClickSchedule} />
+                viewMatches && <ViewMatches ClickMatch={ClickMatch} matches={matches} ClickPointtable={ClickPointtable} ClickSchedule={ClickSchedule} />
             }
             {
-                series && <Series seriesMenu={seriesMenu} matches={matches} />
+                series && <Series seriesMenu={seriesMenu} matches={matches} ClickMatch={ClickMatch} />
             }   
+            {
+                live && <Live nthmatch={nthmatch} />
+            }
         </div>
     )
 }

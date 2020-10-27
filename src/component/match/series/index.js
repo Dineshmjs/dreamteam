@@ -7,7 +7,7 @@ import Stats from './Stats'
 import Venues from './Venues'
 import './index.css'
 
-function Series({seriesMenu, matches}) {
+function Series({seriesMenu, matches, ClickMatch}) {
     const [menu, setMenu] = useState(seriesMenu)
     const ClickMenu = (data)=>{
         setMenu(data)
@@ -17,7 +17,7 @@ function Series({seriesMenu, matches}) {
         <div>
             <SeriesMenus ClickMenu={ClickMenu} />            
             {
-                menu === "matches" && <Matches matches={matches} />
+                menu === "matches" && <Matches ClickMatch={ClickMatch} matches={matches} />
             }
             {
                 menu === "squads" && <Squads />

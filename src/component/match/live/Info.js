@@ -47,7 +47,7 @@ function Info() {
             <div className="w3-container w3-light-gray">
                 <p className="mb-2 mt-2">Squads</p>
             </div>
-            <div className="w3-container w3-white" data-toggle="collapse" data-target="#team1">
+            <div className="w3-container w3-white mt-2" data-toggle="collapse" data-target="#team1">
                 <p>{match.squad.team1}</p>
                 <div className="w3-container collapse" id="team1" >
                     {

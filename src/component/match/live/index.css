@@ -1,0 +1,22 @@
+.lse-row{
+    display: flex;
+    flex-direction: row;
+}
+.lse-col1{
+    flex:0.4
+}
+.lse-col2{
+    flex:0.6
+}
+/* .scd-player{
+    display: flex;
+    flex-direction: row;
+}
+.scd-batsman{
+    margin-right: 250px;
+} */
+.scd-th-tr{
+    background-color: rgb(214, 250, 214);
+    font-size: small;
+    color:gray
+}

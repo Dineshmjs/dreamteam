@@ -23,7 +23,7 @@ mongoose.connect("mongodb://localhost:27017/dreamteam",{ useNewUrlParser: true, 
     }
 })
 
-app.listen(2000,()=>{
+app.listen(4000,()=>{
     console.log("Server run port 2000")
 })
 

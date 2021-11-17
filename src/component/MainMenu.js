@@ -4,13 +4,13 @@ function MainMenu({menuClick}) {
     return (
         <div className="mm-container mt-1 mb-1">
             <div>
-                <button className="btn w3-green" onClick={()=>menuClick('match')}>Match</button>                
+                <p className="" onClick={()=>menuClick('match')}>Match</p>                
             </div>
             <div>
-                <button className="btn w3-green" onClick={()=>menuClick('contest')}>Contest</button>
+                <p className="" onClick={()=>menuClick('contest')}>Contest</p>
             </div>
             <div>
-                <button className="btn w3-green" onClick={()=>menuClick('analyse')}>Analyse</button>
+                <p className="" onClick={()=>menuClick('analyse')}>Analyse</p>
             </div>
         </div>
     )
